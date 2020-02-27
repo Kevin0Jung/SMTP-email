@@ -1,0 +1,22 @@
+import smtplib
+import email.mime.text 
+ 
+ 
+msg = email.mime.text.MIMEText('''自己编辑内容''')
+ 
+msg['Subject'] = '邮件主题' 
+msg['From'] = u'****@*****.com' #发送方，可以自己编辑
+msg['To'] = 'adressee@**.com'#收件人  
+ 
+ 
+try:
+    smtp = smtplib.SMTP()
+    smtp.connect('smtp.163.com', '25')#smtp服务器链接,由发件人所用邮箱服务器决定端口默认25
+    smtp.login('username@**.com','password')
+    smtp.sendmail('username@**.com', 
+                  'adressee@**.com', msg.as_string())
+    smtp.quit()
+    print('Sucess!')
+except Exception as e:
+    print(e)
+
