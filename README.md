@@ -99,5 +99,5 @@ SMTP是英文Simple Mail Transfer Protocol的缩写，意为简单邮件传输�
 ```
 ## 实践结果：
 
-<img src="https://ibb.co/b5bMXY6" />
+<img src="https://i.ibb.co/0ysRr1n/smtp.png />
 
